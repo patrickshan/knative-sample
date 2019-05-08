@@ -1,6 +1,6 @@
 FROM golang:latest
-WORKDIR /go/src/github.com/patrickshan/knative-sample/go/
-COPY . .
+WORKDIR /go/src/github.com/patrickshan/knative-sample/go
+COPY ./go/* .
 RUN CGO_ENABLED=0 go build -v -o app
 
 FROM scratch
