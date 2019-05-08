@@ -22,5 +22,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if !defined {
 		target = "World"
 	}
-	fmt.Fprintf(w, "Hello %s! app version=0.3", target)
+	fmt.Fprintf(w, "Hello %s! app version=0.4", target)
 }
